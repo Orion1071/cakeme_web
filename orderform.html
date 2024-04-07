@@ -13,39 +13,67 @@
 <body>
 
     <header>
-        <!-- nav bar here -->
-        <nav class="navbar navbar-expand-md navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    CAKEME LOGO HERE
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- Gallary -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="Gallary" href="gallary.html">Home</a>
-                        </li>
+                <!-- nav bar here -->
 
-
-
-                        <!-- About us -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About US</a>
-                        </li>
-
-                        <!-- Order Form -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="orderform.html">Order Here</a>
-                        </li>
-                    </ul>
+                <nav class="navbar navbar-expand-md navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            CAKEME LOGO HERE
+                        </a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+        
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <!-- Gallary -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="Gallary" href="gallary.html">Home</a>
+                                </li>
+        
+                                <!-- About us -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+        
+                                <!-- Order Form -->
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-outline-info" href="orderform.html">Order Here</a>
+                                </li>
+        
+        
+                            </ul>
+        
+        
+                        </div>
+                        <div class=" d-none d-md-block justify-content-right">
+        
+                            <ul class="navbar-nav hidden-md ">
+                                <!-- phone call -->
+                                <li class="nav-item hidden-lg hidden-md hidden-xs">
+                                    <button id="call-btn" class="btn btn-primary justify-content-right" type="button">
+                                        <span>540-435-9881</span>
+                                        <div id="deliver_status" style="font-size: 0.5em;">*We deliver"</div>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+        
+        
+        
+                    </div>
+                </nav> <!-- Nav bar ends-->
+        
+                <!-- phone call -->
+                <div class="d-grid gap-2 d-block d-md-none">
+                    <button id="call-btn" class="btn btn-primary justify-content-right" type="button">
+                        <span>540-435-9881</span>
+                        <div id="deliver_status" style="font-size: 0.5em;">*We deliver"</div>
+                    </button>
                 </div>
-            </div>
-        </nav>
 
     </header>
 
