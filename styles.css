@@ -1,6 +1,46 @@
 * {
     padding-top: 3px;
+
+
+}
+
+#body_text {
     padding-left: 10px;
     padding-right: 10px;
-    
 }
+
+/* for hero page */
+.jumbotron {
+    color: white;
+    background-image: url(img/cake_sample.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+/* here end */
+
+
+
+
+/* footer */
+
+.footer {
+    /* background: #061D25; */
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    transition: all .5s ease;
+}
+
+.footer a:hover {
+    color: rgb(156, 22, 22);
+}
+
+/* footer end */

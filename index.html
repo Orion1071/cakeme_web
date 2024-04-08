@@ -11,76 +11,84 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
 
     <header>
-        <!-- nav bar here -->
-
-        <nav class="navbar navbar-expand-md navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    CAKEME LOGO HERE
-                </a>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <!-- Gallary -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="Gallary" href="gallary.html">Home</a>
-                        </li>
-
-                        <!-- About us -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About Us</a>
-                        </li>
-
-                        <!-- Order Form -->
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-outline-info" href="orderform.html">Order Here</a>
-                        </li>
-
-
-                    </ul>
-
-
-                </div>
-                <div class=" d-none d-md-block justify-content-right">
-
-                    <ul class="navbar-nav hidden-md ">
-                        <!-- phone call -->
-                        <li class="nav-item hidden-lg hidden-md hidden-xs">
-                            <button id="call-btn" class="btn btn-primary justify-content-right" type="button">
-                                <span>540-435-9881</span>
-                                <div id="deliver_status" style="font-size: 0.5em;">*We deliver"</div>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
-
-
-            </div>
-        </nav> <!-- Nav bar ends-->
-
-        <!-- phone call -->
-        <div class="d-grid gap-2 d-block d-md-none">
-            <button id="call-btn" class="btn btn-primary justify-content-right" type="button">
-                <span>540-435-9881</span>
-                <div id="deliver_status" style="font-size: 0.5em;">*We deliver"</div>
-            </button>
-        </div>
+        <!-- navbar here -->
+        <!-- Script to add navbar element in the HTML document -->
+        <script>$(function () {
+                $("#nav_bar").load("navbar.html");
+            })</script>
+        <div id="nav_bar"></div>
+        <!-- navbar end -->
     </header>
 
 
-    <h1>This is Cake Me</h1>
+    <!-- Hero image -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">This is Cake Me</h1>
+            <p>The best cheesecake in the town.</p>
+        </div>
+    </div>
+    <!-- Hero done -->
+
+
+    <!-- Description -->
+    <div class="container" id="body_text">
+
+        <h2>Let's Make some cheesecake</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, neque quis eleifend feugiat, libero
+        enim vulputate est, a luctus mi ex in massa. Vestibulum nisi nisl, maximus in maximus nec, consectetur quis
+        orci. Suspendisse tellus nisi, suscipit id leo vitae, pretium ornare erat. Phasellus pharetra lorem nibh, id
+        dapibus tortor bibendum eu. Pellentesque non hendrerit elit. Class aptent taciti sociosqu ad litora torquent per
+        conubia nostra, per inceptos himenaeos. Morbi sed nisi et lectus cursus aliquam ut at tortor. Phasellus eget
+        lorem non orci accumsan sollicitudin. Vestibulum id tortor ut leo vehicula cursus. Vestibulum eu pharetra augue,
+        ac gravida urna. Integer gravida in orci in iaculis.
+
+        Duis tincidunt velit eget felis elementum mollis. Proin maximus tempus pretium. Curabitur sollicitudin viverra
+        diam, sit amet fringilla lacus placerat ac. Nam efficitur, lectus elementum condimentum vestibulum, eros felis
+        volutpat augue, at ultrices velit libero tempor magna. Pellentesque lorem velit, euismod in interdum imperdiet,
+        dignissim eu lacus. Fusce et malesuada libero, eleifend bibendum ligula. Maecenas mi augue, auctor et vulputate
+        nec, pretium eget leo. Donec pellentesque semper orci nec vehicula. Sed rhoncus erat leo, sed consectetur lorem
+        tristique quis.
+
+        In et porttitor neque. Duis quis mi sodales, dignissim tellus sit amet, dapibus elit. Sed auctor tortor metus,
+        sit amet cursus ipsum volutpat id. Donec posuere sapien sed nunc ullamcorper, quis bibendum augue placerat.
+        Vestibulum nec diam pulvinar, dapibus leo sit amet, ultricies velit. Nam lacinia molestie sagittis. Aliquam erat
+        volutpat. Vestibulum et neque congue enim euismod lobortis id non turpis.
+
+        Phasellus id enim ultrices mauris tempor scelerisque at vitae risus. Fusce enim metus, faucibus sit amet
+        venenatis ut, cursus auctor est. Suspendisse eget purus vel quam faucibus lobortis sit amet eget tellus. Duis ut
+        lorem metus. Maecenas nec arcu ipsum. Phasellus semper orci id sagittis laoreet. Sed quis ipsum felis. Integer
+        eu magna accumsan, rutrum ligula at, auctor felis. Nulla venenatis urna ac enim gravida hendrerit. Fusce vel
+        quam ut magna mattis laoreet id vitae erat. Nullam viverra massa commodo ligula interdum finibus. In mi risus,
+        eleifend sit amet pulvinar ac, sollicitudin ut tellus. Sed neque ex, viverra sit amet faucibus vitae, posuere in
+        ante. Vivamus malesuada sapien eget elit consequat elementum. Donec feugiat urna metus, vel blandit magna
+        interdum et.
+
+        Maecenas in eros eget ante dictum aliquet at a arcu. Sed arcu purus, aliquet ut leo sed, dignissim venenatis
+        lacus. Nullam urna metus, rutrum eu iaculis quis, malesuada nec augue. Sed vitae dui venenatis, commodo dolor
+        quis, interdum felis. Nullam tincidunt dapibus elit sed egestas. Donec varius sodales tincidunt. Quisque egestas
+        vel neque et aliquam. Mauris quis mi eget tortor sodales posuere. Sed tristique felis vel mauris gravida
+        convallis. Nam imperdiet in nunc eget varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+        posuere cubilia curae; Donec iaculis, dui ac porttitor egestas, magna est lobortis massa, interdum porttitor
+        risus mauris eu lacus.
+
+    </div>
+
+    <!-- footer here -->
+
+    <!-- Script to add navbar element in the HTML document -->
+    <script>$(function () {
+            $("#foot_bar").load("footer.html");
+        })</script>
+    <div id="foot_bar"></div>
+    <!-- footer end -->
+
 </body>
 
 </html>
