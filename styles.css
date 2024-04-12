@@ -101,6 +101,12 @@
 
 
 /* ==================== about start  ====================*/
+
+#about_index {
+
+    margin: 100px;
+}
+
 .about .about-img {
     min-height: 500px;
 }
@@ -235,18 +241,20 @@
         opacity: 0;
     }
 }
+
 /* ==================== about end  ====================*/
 
 /* ==================== Menu start  ====================*/
 
 /* Add slide left animation */
-#menu {
+#menu_index {
 
-margin-bottom: 100px;
+    margin: 100px;
 
 }
- /* Center the flavor buttons horizontally */
- .flavor-container {
+
+/* Center the flavor buttons horizontally */
+.flavor-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -326,14 +334,129 @@ margin-bottom: 100px;
 
 /* Style the selected buttons */
 .selected {
-    background-color: var(--color-primary); /* Change to your desired color */
+    background-color: var(--color-primary);
+    /* Change to your desired color */
     color: var(--color-default);
-    
+
 }
 
 /* ==================== menu end ==================== */
 
 
+
+
+/* ==================== gallary start ==================== */
+
+
+#gallary_index {
+
+    margin: 50px;
+}
+
+.swiper {
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-primary);
+}
+
+.swiper .swiper-slide-active {
+    text-align: center;
+}
+
+
+/* ==================== gallary end ==================== */
+
+
+/* ==================== testimonial start ==================== */
+
+
+#testimonial_index {
+
+    margin: 50px;
+}
+
+.tt-swipe {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.testimonial p {
+
+    text-decoration-color: #e6e6e6;
+    text-wrap: wrap;
+
+}
+
+.tt-swipe {
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tt-swipe .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tt-swipe .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tt-swipe .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-primary);
+}
+
+.swiper .swiper-slide-active {
+    text-align: center;
+}
+
+
+
+
+/* ==================== testimonial end ==================== */
 
 /* ==================== footer  ====================*/
 
