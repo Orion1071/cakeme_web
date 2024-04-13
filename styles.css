@@ -374,7 +374,7 @@
 }
 
 .swiper {
-    height: 600px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -422,9 +422,12 @@
     margin: 50px;
 }
 
-.tt-swipe {
+.testimonial {
+    max-width: 100%;
+    overflow: hidden;
+  }
 
-    width: 100%;
+.tt-swipe {
     height: 100%;
 
 }
@@ -436,12 +439,6 @@
 
 }
 
-.tt-swipe {
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .tt-swipe .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -449,11 +446,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .tt-swipe .swiper-slide img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
