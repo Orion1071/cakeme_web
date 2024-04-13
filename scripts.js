@@ -8,8 +8,19 @@ $(window).on("resize", function () {
 });
 
 
-// menu section
+// animate on scroll
 
-
-// Gallery
-
+/**
+  * Animation on scroll function and init
+  */
+function aos_init() {
+  AOS.init({
+    duration: 700,
+    easing: 'ease-in-out',
+    once: false,
+    mirror: false
+  });
+}
+window.addEventListener('load', () => {
+  aos_init();
+});

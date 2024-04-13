@@ -9,10 +9,7 @@
     --color-secondary: #f8f8fa;
 }
 
-#body_text {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 
 
 /* navbar */
@@ -104,7 +101,7 @@
 
 #about_index {
 
-    margin: 100px;
+    margin-bottom: 100px;
 }
 
 .about .about-img {
@@ -249,7 +246,7 @@
 /* Add slide left animation */
 #menu_index {
 
-    margin: 100px;
+    margin-bottom: 100px;
 
 }
 
@@ -270,7 +267,7 @@
 
 /* Style the flavor buttons */
 .flavor-btn {
-    background-color: #f2f2f2;
+    background-color: var(--color-default);
     color: #333;
     border: 1px solid #ccc;
     padding: 10px 20px;
@@ -281,7 +278,7 @@
 
 /* Add hover effect for flavor buttons */
 .flavor-btn:hover {
-    background-color: #ddd;
+    background-color: var(--color-secondary);
 }
 
 /* Style the size buttons */
@@ -289,11 +286,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
 .size-btn {
-    background-color: #e6e6e6;
+    background-color: var(--color-default);
     color: #333;
     border: 1px solid #ccc;
     padding: 10px 20px;
@@ -316,13 +313,18 @@
 /* Style the buttons */
 .flavor-btn,
 .size-btn {
-    width: 120px;
-    background-color: #f2f2f2;
-    color: #333;
-    border: 1px solid #ccc;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+    width: 130px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--color-default);
+    background: var(--color-primary);
+    box-shadow: 0 8px 28px rgba(153, 108, 108, 0.2);
     transition: background-color 0.3s ease;
 }
 
@@ -340,6 +342,24 @@
 
 }
 
+@media (max-width: 480px) {
+
+    .flavor-btn,
+    .size-btn {
+        font-weight: 400;
+        font-size: 11px;
+        align-items: center;
+        width: 90px;
+        border-radius: 30px;
+        margin: 2px;
+
+
+    }
+
+}
+
+
+
 /* ==================== menu end ==================== */
 
 
@@ -350,7 +370,7 @@
 
 #gallary_index {
 
-    margin: 50px;
+    margin-bottom: 100px;
 }
 
 .swiper {
@@ -470,6 +490,8 @@
     font-size: 20px;
     padding: 10px;
     transition: all .5s ease;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .footer a:hover {
