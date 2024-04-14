@@ -425,7 +425,7 @@
 .testimonial {
     max-width: 100%;
     overflow: hidden;
-  }
+}
 
 .tt-swipe {
     height: 100%;
@@ -475,6 +475,36 @@
 
 
 /* ==================== testimonial end ==================== */
+
+
+
+
+
+
+/* ==================== order form starts  ==================== */
+
+.order{
+    text-align: center;
+}
+
+.order .info {
+    margin-bottom: 50px;
+}
+
+.order #order_menu {
+    width: 30%;
+    height: 30%;
+}
+
+
+/* ==================== order form end  ==================== */
+
+
+
+
+
+
+
 
 /* ==================== footer  ====================*/
 
