@@ -75,11 +75,17 @@
 
 
     <div class="order container">
-        <h1 class="order" data-aos="fade-up">Order Form</h1>
+        <h1 class="order" data-aos="fade-up">Cake Me Cheesecake</h1>
 
         <!-- menu info -->
         <div class="order info container" data-aos="fade-up" data-aos-duration="1000">
             <p>
+                <i>Order the most delicious cheesecake now! <br>
+
+                    If you have any questions, please feel free to contact us!</i> <br><br>
+
+                <strong>Instagram: @cakeme_am</strong><br>
+                <strong> Email: cakeme.am@gmail.com </strong><br> <br>
                 For reference:<br>
                 1 Slice of cheesecake can feed up to 2 people<br>
                 1 Large cheesecake can feed between 8 - 16 people<br>
@@ -89,88 +95,162 @@
         </div>
 
 
-
-        <form class="row gy-2 gx-3 align-items-center">
+        <div>
+            <h2><strong>Order Form</strong></h2>
+        </div>
+        <form class="order_form row gy-2 gx-3 align-items-center">
 
 
             <!-- name -->
             <div class="form-floating mb-3 col-12">
-                <input type="text" class="form-control" id="order_fullname" placeholder="" required>
+                <input id="order_fullname" type="text" class="form-control" id="order_fullname" placeholder="" required>
                 <label for="order_fullname" class="form-label">Full name</label>
             </div>
 
 
             <!-- phone number -->
             <div class="form-floating mb-3 col-12">
-                <input type="tel" class="form-control" id="order_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"    required>
+                <!-- <input id="order_phone" type="text" class="form-control" id="order_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <label for="order_phone" class="form-label">Phone Number</label> pattern="^-?[0-9]?$" title="Numbers Only: eg. 5551112222" -->
+                <input id="order_phone" type="text" class="form-control" required>
                 <label for="order_phone" class="form-label">Phone Number</label>
             </div>
 
 
-            <!-- order date -->
+            <!-- order date pick up time -->
 
             <div class="form-floating mb-3 col-12">
-                <input type="datetime-local" class="form-control" id="inputAddress" placeholder="1234 Main St, Apt 1">
+                <input id="order_datetime" type="datetime-local" class="form-control" required>
                 <label for="order_date" class="form-label">Order Date and Time</label>
             </div>
 
-            <!-- pick up time -->
-            <div class="form-floating mb-3 col-12">
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St, Apt 1">
-                <label for="fullname" class="form-label">Full name</label>
+            <!-- size -->
+            <div class="form mb-3 col-12">
+                <select id="order_size" class="form-select form-select-md mb-3" size="" aria-label="size select"
+                    required>
+                    <option selected value="">Select Size</option>
+                    <option value="small">Slice ~ $6.49</option>
+                    <option value="large">Two</option>
+                    <option value="multiple">Multiple Orders ( 2 or more )</option>
+                </select>
+                <!-- <label for="fullname" class="form-label"></label> -->
             </div>
 
 
-            <!-- size -->
+
 
 
             <!-- flavor -->
+            <div class="form mb-3 col-12">
+                <select id="order_flavor" class="form-select form-select-md mb-3" size="" aria-label="flavor select"
+                    required>
+                    <option selected value="">Select Flavor</option>
+                    <option value="Original">Original</option>
+                    <option value="Strawberry">Strawberry</option>
+                    <option value="Cherry">Cherry</option>
+                    <option value="Blueberyy">Blueberyy</option>
+                </select>
+                <!-- <label for="fullname" class="form-label"></label> -->
+            </div>
 
-
+            <div class="container">
+                <strong>
+                    <p>If you indicated that you would like to place MULTIPLE ORDERS, please indicate the quantity,
+                        size(s), and flavor(s) below: </p>
+                </strong>
+            </div>
             <!-- multi order text entry -->
             <div class="form-floating mb-3 col-12">
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St, Apt 1">
-                <label for="fullname" class="form-label">Full name</label>
+                <input id="order_multi_order" type="text" class="form-control" id="inputAddress"
+                    placeholder="1234 Main St, Apt 1">
+                <label for="fullname" class="form-label">
+                    <strong>Multiple order description</strong>
+                </label>
             </div>
 
 
             <!-- pick up or delivary -->
+            <div class="form mb-3 col-12">
+                <select id="order_pickup_delivery" class="form-select form-select-md mb-3" size=""
+                    aria-label="Pickup or Delivery" required>
+                    <option selected value="">Pickup or Delivery</option>
+                    <option value="Pickup - free (Pickup location will be sent to you after confirmation)">Pickup - free
+                        (Pickup location will be sent to you after confirmation)
+                    </option>
+                    <option value="Delivery - $5 fee within Harrisonburg Area">Delivery - $5 fee within Harrisonburg
+                        Area</option>
+                </select>
+                <!-- <label for="fullname" class="form-label"></label> -->
+            </div>
 
-
+            <div class="container">
+                <p>
+                    <b>Consent Form: </b><br>
+                    <i> If you choose delivery, I understand that delivery will cost me $5 fee<br>
+                        (separate from the cheesecake cost)</i>
+                </p>
+            </div>
             <!-- delivary confirmation -->
+            <div class="form mb-3 col-12">
+                <select id="order_deli_confirm" class="form-select form-select-md mb-3" size=""
+                    aria-label="Pickup or Delivery" required>
+                    <option selected value="">Select One</option>
+                    <option value="I understand, and I agree to this fee">I understand, and I agree to this fee
+                    </option>
+                    <option value="Not applicable ~ I chose pickup">Not applicable ~ I chose pickup</option>
+                </select>
+                <!-- <label for="fullname" class="form-label"></label> -->
+            </div>
 
+            <div class="container">
+                <p>
+                    If you indicated that you would like a delivery, please enter the <strong>address</strong> you would
+                    like your
+                    cheesecake delivered to:<br>
+
+                    Example: 738 S Mason St, Harrisonburg, VA 22807
+                </p>
+            </div>
 
             <!-- address -->
             <div class="form-floating mb-3 col-12">
 
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St, Apt 1">
+                <input id="order_addy" type="text" class="form-control" id="inputAddress"
+                    placeholder="1234 Main St, Apt 1">
                 <label for="inputAddress" class="form-label">Address</label>
             </div>
 
             <div class="form-floating mb-3 col-md-6">
 
-                <input type="text" class="form-control" id="inputCity" placeholder="Harrisonburg">
+                <input id="order_city" type="text" class="form-control" id="inputCity" placeholder="Harrisonburg">
                 <label for="inputCity" class="form-label">City</label>
             </div>
             <div class="form-floating mb-3 col-md-4">
 
-                <input type="text" class="form-control" id="inputCity" placeholder="VA">
+                <input id="order_state" type="text" class="form-control" id="inputCity" placeholder="VA">
                 <label for="inputState" class="form-label">State</label>
             </div>
             <div class="form-floating mb-3 col-md-2">
 
-                <input type="text" class="form-control" id="inputZip" placeholder="22801">
+                <input id="order_zip" type="text" class="form-control" id="inputZip" placeholder="22801">
                 <label for="inputZip" class="form-label">Zip</label>
             </div>
 
             <!-- submit button  -->
 
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="order_submit" type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
 
     </div>
+
+    <!-- form api script -->
+    <script>
+
+
+
+    </script>
     <!-- footer here -->
 
     <!-- Script to add navbar element in the HTML document -->
