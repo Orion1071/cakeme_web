@@ -1,6 +1,3 @@
-* {
-    padding-top: 3px;
-}
 
 /* Colors */
 :root {
@@ -10,12 +7,19 @@
 }
 
 
+* {
+    padding-top: 3px;
+    
+}
+
+
+
 
 
 /* navbar */
-/* #nav_bars{
+#nav_bars{
     background: var(--color-primary);
-} */
+}
 
 /* for hero page */
 .jumbotron {
@@ -463,11 +467,11 @@
 
 
 
-.swiper .swiper-pagination .swiper-pagination-bullet-active {
+.tt-swipe .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--color-primary);
 }
 
-.swiper .swiper-slide-active {
+.tt-swipe .swiper-slide-active {
     text-align: center;
 }
 
@@ -492,8 +496,8 @@
 }
 
 .order #order_menu {
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
 }
 
 .order_form {
