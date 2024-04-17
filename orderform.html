@@ -98,11 +98,14 @@
             <h2><strong>Order Form</strong></h2>
         </div>
         <form id="order_form_inputs" class="order_form row gy-2 gx-3 align-items-center">
+            <!-- action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe3SOHJgvwV_ZDTEDjEHdqKPV0qpAw35PeLhVxp_g9htap_BA/formResponse"
+            method="POST"> -->
 
 
             <!-- name -->
             <div class="form-floating mb-3 col-12">
-                <input id="order_fullname" type="text" class="form-control" id="order_fullname" placeholder="" required>
+                <input name="entry.532714139" id="order_fullname" type="text" class="form-control" id="order_fullname"
+                    placeholder="" required>
                 <label for="order_fullname" class="form-label">Full name</label>
             </div>
 
@@ -111,22 +114,24 @@
             <div class="form-floating mb-3 col-12">
                 <!-- <input id="order_phone" type="text" class="form-control" id="order_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 <label for="order_phone" class="form-label">Phone Number</label> pattern="^-?[0-9]?$" title="Numbers Only: eg. 5551112222" -->
-                <input id="order_phone" type="text" class="form-control" required>
+                <input name="entry.260774608" id="order_phone" type="text" class="form-control" required>
                 <label for="order_phone" class="form-label">Phone Number</label>
             </div>
 
 
             <!-- order date pick up time -->
             <div class="form-floating mb-3 col-12">
-                <input id="order_datetime" type="datetime-local" class="form-control" required>
+                <input name="entry.1511446537" id="order_datetime" type="datetime-local" class="form-control"
+                     required>
                 <label for="order_date" class="form-label">Please list the Date and Time you would like your
                     cheesecake</label>
             </div>
 
             <!-- size -->
             <div class=" form mb-3 col-12">
-                <select id="order_size" class="form-control form-select order_form_dropdown form-select-md mb-3 "
-                    size="" aria-label="size select" required>
+                <select name="entry.150430871" id="order_size"
+                    class="form-control form-select order_form_dropdown form-select-md mb-3 " size=""
+                    aria-label="size select" required>
                     <option selected value="">Select Size</option>
                     <option value="Slice">Slice ~ $6.49</option>
                     <option value="Large">Large ~ $34.49</option>
@@ -141,13 +146,13 @@
 
             <!-- flavor -->
             <div class="form mb-3 col-12">
-                <select id="order_flavor" class="form-control form-select form-select-md mb-3" size=""
-                    aria-label="flavor select" required>
+                <select name="entry.2117631882" id="order_flavor" class="form-control form-select form-select-md mb-3"
+                    size="" aria-label="flavor select" required>
                     <option selected value="">Select Flavor</option>
                     <option value="Original">Original</option>
                     <option value="Strawberry">Strawberry</option>
                     <option value="Cherry">Cherry</option>
-                    <option value="Blueberyy">Blueberry</option>
+                    <option value="Blueberry">Blueberry</option>
                 </select>
                 <!-- <label for="fullname" class="form-label"></label> -->
             </div>
@@ -164,7 +169,7 @@
             </div>
             <!-- multi order text entry -->
             <div class="form-floating mb-3 col-12">
-                <input id="order_multi_order" type="text" class="form-control" id="inputAddress"
+                <input name="entry.1911536277" id="order_multi_order" type="text" class="form-control" id="inputAddress"
                     placeholder="1234 Main St, Apt 1">
                 <label for="multi_order" class="form-label">
                     <strong>Multiple order description</strong>
@@ -174,13 +179,14 @@
 
             <!-- pick up or delivary -->
             <div class="form mb-3 col-12">
-                <select id="order_pickup_delivery" class="form-control form-select form-select-md mb-3" size=""
-                    aria-label="Pickup or Delivery" required>
+                <select name="entry.1469173899" id="order_pickup_delivery"
+                    class="form-control form-select form-select-md mb-3" size="" aria-label="Pickup or Delivery"
+                    required>
                     <option selected value="">Pickup or Delivery</option>
-                    <option value="Pickup - free (Pickup location will be sent to you after confirmation)">Pickup - free
+                    <option value="Pickup">Pickup - free
                         (Pickup location will be sent to you after confirmation)
                     </option>
-                    <option value="Delivery - $5 fee within Harrisonburg Area">Delivery - $5 fee within Harrisonburg
+                    <option value="Delivery">Delivery - $5 fee within Harrisonburg
                         Area</option>
                 </select>
                 <!-- <label for="fullname" class="form-label"></label> -->
@@ -195,12 +201,13 @@
             </div>
             <!-- delivary confirmation -->
             <div class="form mb-3 col-12">
-                <select id="order_deli_confirm" class="form-control form-select form-select-md mb-3" size=""
-                    aria-label="Pickup or Delivery" required>
+                <select name="entry.985189264" id="order_deli_confirm"
+                    class="form-control form-select form-select-md mb-3" size="" aria-label="Pickup or Delivery"
+                    required>
                     <option selected value="">Select One</option>
-                    <option value="I understand, and I agree to this fee">I understand, and I agree to this fee
+                    <option value="Agree">I understand, and I agree to this fee
                     </option>
-                    <option value="Not applicable ~ I chose pickup">Not applicable ~ I chose pickup</option>
+                    <option value="NA">Not applicable ~ I chose pickup</option>
                 </select>
                 <!-- <label for="fullname" class="form-label"></label> -->
             </div>
@@ -215,11 +222,11 @@
                 </p>
             </div>
 
-            <!-- address -->
+            <!-- address  onkeyup="generateAddress() -->
             <div class="form-floating mb-3 col-12">
 
-                <input id="order_addy" type="text" class="form-control" id="inputAddress"
-                    placeholder="1234 Main St, Apt 1">
+                <input id="order_addy" type="text" class="form-control" id="inputAddress""
+                    placeholder=" 123 Apple Street">
                 <label for="inputAddress" class="form-label">Address</label>
             </div>
 
@@ -239,10 +246,12 @@
                 <label for="inputZip" class="form-label">Zip</label>
             </div>
 
+            <!-- <input id="fulladdy" name="entry.1122564368" type="hidden" value=""> -->
+
             <!-- submit button  -->
 
-            <div class="col-12">
-                <button id="order_submit" type="submit" class="btn btn-primary">Submit</button>
+            <div class="col-12" id="submitbox">
+                <input class="btn btn-primary" id="order_submit" type="submit" name="Submit" value="Submit">
             </div>
 
             <div id="order_confirm_out"></div>
@@ -263,25 +272,34 @@
     address = entry.1122564368
     -->
 
+    <!-- get pull address -->
+
     <!-- form api script -->
     <script>
 
+        function generateAddress() {
+
+            const address = [document.querySelector('#order_addy').value,
+            document.querySelector('#order_city').value,
+            document.querySelector('#order_state').value,
+            document.querySelector('#order_zip').value];
+            document.getElementById('fulladdy').value = address.join(" ")
+        }
+
         const myForm = document.getElementById('order_form_inputs');
-        myForm.addEventListener('order_submit', function (event) {
-            // event.preventDefault(); // Prevent form submission (optional)
+        myForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission (optional)
             sendDataToGoogleForm(); // Call your custom function
+
         });
-
-
-
-
         function sendDataToGoogleForm() {
 
-            const address = [document.querySelector('#order_addy').value ,
+            const address = [document.querySelector('#order_addy').value,
             document.querySelector('#order_city').value,
-            document.querySelector('#order_state').value ,
+            document.querySelector('#order_state').value,
             document.querySelector('#order_zip').value];
-        
+
+            //https://docs.google.com/forms/d/e/1FAIpQLSe3SOHJgvwV_ZDTEDjEHdqKPV0qpAw35PeLhVxp_g9htap_BA/viewform?usp=pp_url&entry.532714139=a&entry.260774608=a&entry.1511446537=a&entry.150430871=Slice&entry.2117631882=Original&entry.1911536277=a&entry.1469173899=Delivery&entry.985189264=Agree&entry.1122564368=a
             const settings = {
                 "async": true,
                 "crossDomain": true,
@@ -299,27 +317,22 @@
                     "entry.1911536277": document.querySelector('#order_multi_order').value,
                     "entry.1469173899": document.querySelector('#order_pickup_delivery').value,
                     "entry.985189264": document.querySelector('#order_deli_confirm').value,
-                    "entry.1122564368": address.join(" "),
-                    "submit": "Submit"
+                    "entry.1122564368": address.join(" ")
 
                 }
             };
 
-            
+
 
             console.log(settings);
             document.querySelector("#order_confirm_out").innerHTML = "We got your order! We will call you when it is ready!<br>If you want to order more, please refreash the page. Thank you.";
             // Uncomment the following line to send data to the Google Form
             console.log("Before the ajax")
-            $.ajax(settings).done(function (response) {
-                //console.log("In ajax")
-                //console.log(response); -->
-            });
+            $.ajax(settings)
             console.log("I finished the ajax")
 
 
         }
-
 
     </script>
     <!-- footer here -->
@@ -347,3 +360,47 @@
 </body>
 
 </html>
+
+
+<!-- function sendDataToGoogleForm() {
+
+            const address = [document.querySelector('#order_addy').value ,
+            document.querySelector('#order_city').value,
+            document.querySelector('#order_state').value ,
+            document.querySelector('#order_zip').value];
+        
+            //https://docs.google.com/forms/d/e/1FAIpQLSe3SOHJgvwV_ZDTEDjEHdqKPV0qpAw35PeLhVxp_g9htap_BA/viewform?usp=pp_url&entry.532714139=a&entry.260774608=a&entry.1511446537=a&entry.150430871=Slice&entry.2117631882=Original&entry.1911536277=a&entry.1469173899=Delivery&entry.985189264=Agree&entry.1122564368=a
+            const settings = {
+                "async": true,
+                "crossDomain": true,
+                "method": "POST",
+                "url": "https://docs.google.com/forms/d/e/&quot1FAIpQLSe3SOHJgvwV_ZDTEDjEHdqKPV0qpAw35PeLhVxp_g9htap_BA/formResponse",
+                "headers": {
+                    "content-type": "application/x-www-form-urlencoded"
+                },
+                "data": {
+                    "entry.532714139": document.querySelector('#order_fullname').value,
+                    "entry.260774608": document.querySelector('#order_phone').value,
+                    "entry.1511446537": document.querySelector('#order_datetime').value,
+                    "entry.150430871": document.querySelector('#order_size').value,
+                    "entry.2117631882": document.querySelector('#order_flavor').value,
+                    "entry.1911536277": document.querySelector('#order_multi_order').value,
+                    "entry.1469173899": document.querySelector('#order_pickup_delivery').value,
+                    "entry.985189264": document.querySelector('#order_deli_confirm').value,
+                    "entry.1122564368": address.join(" "),
+                    "submit": "Submit"
+
+                }
+            };
+
+            
+
+            console.log(settings);
+            document.querySelector("#order_confirm_out").innerHTML = "We got your order! We will call you when it is ready!<br>If you want to order more, please refreash the page. Thank you.";
+            // Uncomment the following line to send data to the Google Form
+            console.log("Before the ajax")
+            $.ajax(settings)
+            console.log("I finished the ajax")
+
+
+        } -->
