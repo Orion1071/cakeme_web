@@ -25,46 +25,45 @@
     <header>
         <!-- navbar here -->
 
-        <nav class="navbar navbar-expand-md navbar-expand-lg bg-body-tertiary ">
-            <div class="nav_bar container-fluid">
-                <a class="logo d-flex align-items-center me-auto me-lg-0" href="index.html">
-                    <img src="img/cakeme_logo.png" width="60" height="60">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="navbar navbar-expand-md navbar-expand-lg bg-body-tertiary" ">
+            <div class=" nav_bar container-fluid " style=" background: #f7b9ce">
+            <a class="logo d-flex align-items-center me-auto me-lg-0" href="index.html">
+                <img src="img/cakeme_logo.png" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <!-- menu -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="Menu" href="index.html#menu_index">Menu</a>
-                        </li>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <!-- menu -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="Menu" href="index.html#menu_index">Menu</a>
+                    </li>
 
-                        <!-- About us -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#about_index">About Us</a>
-                        </li>
+                    <!-- About us -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about_index">About Us</a>
+                    </li>
 
-                        <!-- Gallary -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="Gallary"
-                                href="index.html#gallary_index">Gallary</a>
-                        </li>
+                    <!-- Gallary -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="Gallary" href="index.html#gallary_index">Gallary</a>
+                    </li>
 
-                        <!-- Order Form -->
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-outline-info" href="orderform.html">Order Here</a>
-                        </li>
-
-
-                    </ul>
+                    <!-- Order Form -->
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-info" href="orderform.html">Order Here</a>
+                    </li>
 
 
-                </div>
+                </ul>
+
+
+            </div>
 
             </div>
         </nav>
@@ -98,7 +97,7 @@
         <div>
             <h2><strong>Order Form</strong></h2>
         </div>
-        <form class="order_form row gy-2 gx-3 align-items-center">
+        <form id="order_form_inputs" class="order_form row gy-2 gx-3 align-items-center">
 
 
             <!-- name -->
@@ -118,20 +117,20 @@
 
 
             <!-- order date pick up time -->
-
             <div class="form-floating mb-3 col-12">
                 <input id="order_datetime" type="datetime-local" class="form-control" required>
-                <label for="order_date" class="form-label">Order Date and Time</label>
+                <label for="order_date" class="form-label">Please list the Date and Time you would like your
+                    cheesecake</label>
             </div>
 
             <!-- size -->
-            <div class="form mb-3 col-12">
-                <select id="order_size" class="form-select form-select-md mb-3" size="" aria-label="size select"
-                    required>
+            <div class=" form mb-3 col-12">
+                <select id="order_size" class="form-control form-select order_form_dropdown form-select-md mb-3 "
+                    size="" aria-label="size select" required>
                     <option selected value="">Select Size</option>
-                    <option value="Slice ~ $6.49">Slice ~ $6.49</option>
-                    <option value="Large ~ $34.49">Large ~ $34.49</option>
-                    <option value="Multiple Orders (2 or more orders)">Multiple Orders ( 2 or more )</option>
+                    <option value="Slice">Slice ~ $6.49</option>
+                    <option value="Large">Large ~ $34.49</option>
+                    <option value="Multiple">Multiple Orders ( 2 or more )</option>
                 </select>
                 <!-- <label for="fullname" class="form-label"></label> -->
             </div>
@@ -142,8 +141,8 @@
 
             <!-- flavor -->
             <div class="form mb-3 col-12">
-                <select id="order_flavor" class="form-select form-select-md mb-3" size="" aria-label="flavor select"
-                    required>
+                <select id="order_flavor" class="form-control form-select form-select-md mb-3" size=""
+                    aria-label="flavor select" required>
                     <option selected value="">Select Flavor</option>
                     <option value="Original">Original</option>
                     <option value="Strawberry">Strawberry</option>
@@ -157,13 +156,17 @@
                 <strong>
                     <p>If you indicated that you would like to place MULTIPLE ORDERS, please indicate the quantity,
                         size(s), and flavor(s) below: </p>
+
+                    <p>Example:<br>
+                        3 Large - 2 Strawberry, 1 Cherry<br>
+                        2 Slices - 1 Blueberry and 1 Original </p>
                 </strong>
             </div>
             <!-- multi order text entry -->
             <div class="form-floating mb-3 col-12">
                 <input id="order_multi_order" type="text" class="form-control" id="inputAddress"
                     placeholder="1234 Main St, Apt 1">
-                <label for="fullname" class="form-label">
+                <label for="multi_order" class="form-label">
                     <strong>Multiple order description</strong>
                 </label>
             </div>
@@ -171,7 +174,7 @@
 
             <!-- pick up or delivary -->
             <div class="form mb-3 col-12">
-                <select id="order_pickup_delivery" class="form-select form-select-md mb-3" size=""
+                <select id="order_pickup_delivery" class="form-control form-select form-select-md mb-3" size=""
                     aria-label="Pickup or Delivery" required>
                     <option selected value="">Pickup or Delivery</option>
                     <option value="Pickup - free (Pickup location will be sent to you after confirmation)">Pickup - free
@@ -185,14 +188,14 @@
 
             <div class="container">
                 <p>
-                    <b>Consent Form: </b><br>
-                    <i> If you choose delivery, I understand that delivery will cost me $5 fee<br>
+                    <!-- <b>Consent Form: </b><br> -->
+                    <i>I understand that delivery will cost me $5 fee<br>
                         (separate from the cheesecake cost)</i>
                 </p>
             </div>
             <!-- delivary confirmation -->
             <div class="form mb-3 col-12">
-                <select id="order_deli_confirm" class="form-select form-select-md mb-3" size=""
+                <select id="order_deli_confirm" class="form-control form-select form-select-md mb-3" size=""
                     aria-label="Pickup or Delivery" required>
                     <option selected value="">Select One</option>
                     <option value="I understand, and I agree to this fee">I understand, and I agree to this fee
@@ -241,13 +244,80 @@
             <div class="col-12">
                 <button id="order_submit" type="submit" class="btn btn-primary">Submit</button>
             </div>
+
+            <div id="order_confirm_out"></div>
         </form>
 
     </div>
 
+    <!-- entry points
+    
+    name = entry.532714139
+    phone = entry.260774608
+    date = entry.1511446537
+    size = entry.150430871
+    flavor =entry.2117631882
+    multiorder = entry.1911536277
+    pickup =entry.1469173899
+    confirm =entry.985189264
+    address = entry.1122564368
+    -->
+
     <!-- form api script -->
     <script>
 
+        const myForm = document.getElementById('order_form_inputs');
+        myForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission (optional)
+            sendDataToGoogleForm(); // Call your custom function
+        });
+
+
+
+
+        function sendDataToGoogleForm() {
+
+            const address = [document.querySelector('#order_addy').value ,
+            document.querySelector('#order_city').value,
+            document.querySelector('#order_state').value ,
+            document.querySelector('#order_zip').value];
+        
+            const settings = {
+                "async": true,
+                "crossDomain": true,
+                "method": "POST",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSe3SOHJgvwV_ZDTEDjEHdqKPV0qpAw35PeLhVxp_g9htap_BA/formResponse",
+                "headers": {
+                    "content-type": "application/x-www-form-urlencoded"
+                },
+                "data": {
+                    "entry.532714139": document.querySelector('#order_fullname').value,
+                    "entry.260774608": document.querySelector('#order_phone').value,
+                    "entry.1511446537": document.querySelector('#order_datetime').value,
+                    "entry.150430871": document.querySelector('#order_size').value,
+                    "entry.2117631882": document.querySelector('#order_flavor').value,
+                    "entry.1911536277": document.querySelector('#order_multi_order').value,
+                    "entry.1469173899": document.querySelector('#order_pickup_delivery').value,
+                    "entry.985189264": document.querySelector('#order_deli_confirm').value,
+                    "entry.1122564368": address.join(" "),
+
+                }
+            };
+
+            console.log(settings)
+
+            // console.log(settings);
+            document.querySelector("#order_confirm_out").innerHTML = "We got your order! We will call you when it is ready!<br>If you want to order more, please refreash the page. Thank you.";
+            // Uncomment the following line to send data to the Google Form
+            console.log("Before the ajax")
+            $.ajax(settings).done(function (response) {
+                //console.log("In ajax")
+                //console.log(response); -->
+            });
+            console.log("I finished the ajax")
+
+
+        }
 
 
     </script>
