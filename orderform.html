@@ -147,7 +147,7 @@
                     <option value="Original">Original</option>
                     <option value="Strawberry">Strawberry</option>
                     <option value="Cherry">Cherry</option>
-                    <option value="Blueberyy">Blueberyy</option>
+                    <option value="Blueberyy">Blueberry</option>
                 </select>
                 <!-- <label for="fullname" class="form-label"></label> -->
             </div>
@@ -267,7 +267,7 @@
     <script>
 
         const myForm = document.getElementById('order_form_inputs');
-        myForm.addEventListener('submit', function (event) {
+        myForm.addEventListener('order_submit', function (event) {
             event.preventDefault(); // Prevent form submission (optional)
             sendDataToGoogleForm(); // Call your custom function
         });
