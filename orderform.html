@@ -105,7 +105,7 @@
             <!-- name -->
             <div class="form-floating mb-3 col-12">
                 <input name="entry.532714139" id="order_fullname" type="text" class="form-control" id="order_fullname"
-                    placeholder="" required>
+                    placeholder="" title="Please fill out your name" required>
                 <label for="order_fullname" class="form-label">Full name</label>
             </div>
 
@@ -114,7 +114,7 @@
             <div class="form-floating mb-3 col-12">
                 <!-- <input id="order_phone" type="text" class="form-control" id="order_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 <label for="order_phone" class="form-label">Phone Number</label> pattern="^-?[0-9]?$" title="Numbers Only: eg. 5551112222" -->
-                <input name="entry.260774608" id="order_phone" type="text" class="form-control" required>
+                <input name="entry.260774608" id="order_phone" type="text" class="form-control" title="Please fill out your phone number" required>
                 <label for="order_phone" class="form-label">Phone Number</label>
             </div>
 
@@ -122,7 +122,7 @@
             <!-- order date pick up time -->
             <div class="form-floating mb-3 col-12">
                 <input name="entry.1511446537" id="order_datetime" type="datetime-local" class="form-control"
-                     required>
+                title="Please select prefered order date and time" required>
                 <label for="order_date" class="form-label">Please list the Date and Time you would like your
                     cheesecake</label>
             </div>
@@ -131,7 +131,7 @@
             <div class=" form mb-3 col-12">
                 <select name="entry.150430871" id="order_size"
                     class="form-control form-select order_form_dropdown form-select-md mb-3 " size=""
-                    aria-label="size select" required>
+                    aria-label="size select" title="Please select your size" required>
                     <option selected value="">Select Size</option>
                     <option value="Slice">Slice ~ $6.49</option>
                     <option value="Large">Large ~ $34.49</option>
@@ -147,7 +147,7 @@
             <!-- flavor -->
             <div class="form mb-3 col-12">
                 <select name="entry.2117631882" id="order_flavor" class="form-control form-select form-select-md mb-3"
-                    size="" aria-label="flavor select" required>
+                    size="" aria-label="flavor select" title="Please select the flavor" required>
                     <option selected value="">Select Flavor</option>
                     <option value="Original">Original</option>
                     <option value="Strawberry">Strawberry</option>
@@ -180,7 +180,7 @@
             <!-- pick up or delivary -->
             <div class="form mb-3 col-12">
                 <select name="entry.1469173899" id="order_pickup_delivery"
-                    class="form-control form-select form-select-md mb-3" size="" aria-label="Pickup or Delivery"
+                    class="form-control form-select form-select-md mb-3" size="" aria-label="Pickup or Delivery" title="Please select the option"
                     required>
                     <option selected value="">Pickup or Delivery</option>
                     <option value="Pickup">Pickup - free
@@ -202,7 +202,7 @@
             <!-- delivary confirmation -->
             <div class="form mb-3 col-12">
                 <select name="entry.985189264" id="order_deli_confirm"
-                    class="form-control form-select form-select-md mb-3" size="" aria-label="Pickup or Delivery"
+                    class="form-control form-select form-select-md mb-3" size="" aria-label="Pickup or Delivery" title="Please confirm"
                     required>
                     <option selected value="">Select One</option>
                     <option value="Agree">I understand, and I agree to this fee
