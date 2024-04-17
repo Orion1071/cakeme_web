@@ -304,17 +304,17 @@
                 }
             };
 
-            console.log(settings)
+            
 
             // console.log(settings);
             document.querySelector("#order_confirm_out").innerHTML = "We got your order! We will call you when it is ready!<br>If you want to order more, please refreash the page. Thank you.";
             // Uncomment the following line to send data to the Google Form
-            console.log("Before the ajax")
+            //console.log("Before the ajax")
             $.ajax(settings).done(function (response) {
                 //console.log("In ajax")
                 //console.log(response); -->
             });
-            console.log("I finished the ajax")
+            //console.log("I finished the ajax")
 
 
         }
