@@ -11,12 +11,12 @@
 
 }
 
-select.form-control{
-    -webkit-appearance: menulist!important;
-    -moz-appearance: menulist!important;
-    -ms-appearance: menulist!important;
-    -o-appearance: menulist!important;
-    appearance: menulist!important;
+select.form-control {
+    -webkit-appearance: menulist !important;
+    -moz-appearance: menulist !important;
+    -ms-appearance: menulist !important;
+    -o-appearance: menulist !important;
+    appearance: menulist !important;
 }
 
 
@@ -532,6 +532,22 @@ select.form-control{
     background-repeat: no-repeat;
     background-position: right 0.7rem top 50%;
     background-size: 0.65rem auto;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px var(--color-primary);
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}
+
+select:invalid {
+    box-shadow: 0 0 5px 1px var(--color-primary);
+}
+
+select:focus:invalid {
+    box-shadow: none;
 }
 
 /* ==================== order form end  ==================== */
